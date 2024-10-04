@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     display: grid;
     height: 600px;
@@ -18,6 +20,7 @@ nav {
     background-color: rgb(2, 116, 136);
     align-items: center;
     border-radius: 0.2em;
+    font-family: Fredoka;
 }
 
 nav a {
@@ -85,11 +88,13 @@ main {
     margin-left: 20px;
 }
 
-.card-about-me h1 {
+.card-about-me h2 {
     background-color: rgb(40, 136, 153);
     color: white;
     border-radius: 0.2em;
     margin-top: 0px;
+    text-align: center;
+    font-family: Fredoka;
 }
 
 .card-resources {
@@ -100,15 +105,18 @@ main {
     border-radius: 0.5em;
 }
 
-.card-resources h1 {
+.card-resources h2 {
     background-color: rgb(40, 136, 153);
     color: white;
     border-radius: 0.2em;
     margin-top: 0px;
+    text-align: center;
+    font-family: Fredoka;
 }
 
 .card-resources ul {
     font-size: 1.2em;
+    font-family: Lato;
 }
 
 .card-resources ul li {
@@ -122,4 +130,9 @@ footer {
 
 h1 {
     text-align: center;
+    font-family: Fredoka;
+}
+
+p {
+    font-family: Lato;
 }
