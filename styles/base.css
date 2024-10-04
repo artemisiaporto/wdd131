@@ -29,6 +29,7 @@ nav a {
     padding: 10px 10% 10px 10%;
 	text-decoration: none;
 	text-align: center;
+    font-size: 0.9em;
 }
 
 nav a:hover {
