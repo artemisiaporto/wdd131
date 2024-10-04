@@ -1,7 +1,7 @@
 const today = new Date();
 
-currentyear.innerHTML = today.getFullYear();
+document.getElementById("currentyear").textContent = today.getFullYear();
 
-let lastModif = new Date(document.lastModified);
+const lastModif = new Date();
 
-lastModified.innerHTML = `Last Modification: ${lastModif}`;
+document.getElementById("lastModified").textContent = `Last Modification: ${lastModif}`;
