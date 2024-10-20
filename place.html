@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Artemisia Porto</title>
+    <meta
+        name="description"
+        content="A page about a country or place I lived or have visited or wish to visit that is responsive in small and larger views.">
+    <meta name="author" content="Artemisia Porto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Seoul | South Korea</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/seoul-large.webp" media="(min-width: 1000px)">
+                <img src="images/seoul-small.webp" alt="Seoul-South Korea" width="500" height="350">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Area: </td>
+                        <td>605,210 km²</td>
+                    </tr>
+                    <tr>
+                        <td>Population: </td>
+                        <td>9,635,445 mi</td>
+                    </tr>
+                    <tr>
+                        <td>Languages: </td>
+                        <td>Korean</td>
+                    </tr>
+                    <tr>
+                        <td>Currency: </td>
+                        <td>Won</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone: </td>
+                        <td>UTC+9</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code: </td>
+                        <td>+82</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD: </td>
+                        <td>.kr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="weather">
+            <h2 class="weather-title">Weather</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Temperature: </td>
+                        <td>13 °C</td>
+                    </tr>
+                    <tr>
+                        <td>Conditions: </td>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>Wind: </td>
+                        <td>14 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill: </td>
+                        <td><span id="wind-chill"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Artemísia Porto - Brazil</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
