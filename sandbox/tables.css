@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 3%;
+}
+
+table {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0);
+    border-collapse: collapse;
+
+    caption {
+        caption-side: bottom;
+        font-size: smaller;
+        padding: 0.5rem;
+    }
+
+    th, td {
+        padding: 0.3em 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        white-space: pre;
+    }
+
+    thead th, tbody td {
+        text-align: center;
+    }
+
+    thead {
+        color: white;
+        background-color:  rgb(5, 89, 119);
+        
+        th {
+            padding: 0.7rem;
+            font-size: larger;
+        }
+
+        tr:nth-last-child(1) {
+            background-color: rgb(7, 119, 160);
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgb(224, 224, 224);
+    }
+
+    .blank {
+        background-color: rgb(5, 89, 119);
+    }
+}

@@ -1,0 +1,43 @@
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        justify-content: flex-end;
+        flex-direction: row;
+        display: flex;
+        background-color: rgb(245, 225, 195);
+        font-family: 'Afacad Flux';
+    }
+
+    nav.open {
+        justify-content: flex-end;
+        flex-direction: row;
+        display: flex;
+        background-color: rgb(245, 225, 195);
+        font-family: 'Afacad Flux';
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .temple-card {
+        padding: 15px;
+    }
+    
+    .temple-card img {
+        width: 400px;
+        height: 250px;
+        display: block;
+        margin-top: 10px;
+    }
+}

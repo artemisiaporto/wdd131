@@ -1,0 +1,26 @@
+main {
+    width: 400px;
+}
+img {
+    display: block;
+    padding: 1%;
+    width: 100%;
+}
+
+.fade-image img {
+    opacity: 0;
+    animation: fadeIn 5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1, footer {
+    text-align: center;
+}
