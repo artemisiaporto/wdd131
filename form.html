@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Artemisia Porto</title>
+    <meta
+        name="description"
+        content="A form of a product review.">
+    <meta name="author" content="Artemisia Porto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="main-form"></form>
+            <label>Product Name</label>
+            <select class="firstselect" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            
+            <label>Overall Rating</label>
+            <label><input type="radio" id="oneStar" name="rating" value="one-star" required>&#9734;</label>
+            <label><input type="radio" id="twoStars" name="rating" value="two-stars" required>&#9734;&#9734;</label>
+            <label><input type="radio" id="threeStars" name="rating" value="three-stars" required>&#9734;&#9734;&#9734;</label>
+            <label><input type="radio" id="fourStars" name="rating" value="four-stars" required>&#9734;&#9734;&#9734;&#9734;</label>
+            <label><input type="radio" id="fiveStars" name="rating" value="five-stars" required>&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+            
+            <label>Date of Installation<input type="date" id="installationDate" name="installationDate" required></label>
+            
+            <label>Which features did you find useful in the product?</label>
+            <label><i>(Check all that apply)</i></label>
+            <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" id="easeofuse" name="easeofuse" value="yes">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+            
+            <label>Written Review <i>(Optional)</i><textarea id="review" name="writtenreview" rows="6"></textarea></label>
+            
+            <label>Your Name <i>(Optional)</i><input type="text" id="userName" name="userName"></label>
+            
+            <input type="submit" value="Send Review">
+        </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Artemísia Porto - Brazil</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
