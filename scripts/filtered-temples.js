@@ -128,7 +128,7 @@ homeList.addEventListener('click', () => {
 const oldList = document.querySelector("#old");
 
 oldList.addEventListener('click', () => {
-    showTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 2000));
+    showTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900));
 })
 
 const newList = document.querySelector("#new");
@@ -140,7 +140,7 @@ newList.addEventListener('click', () => {
 const largeList = document.querySelector("#large");
 
 largeList.addEventListener('click', () => {
-    showTemples(temples.filter(temple => temple.area > 70000));
+    showTemples(temples.filter(temple => temple.area > 90000));
 })
 
 const smallList = document.querySelector("#small");
