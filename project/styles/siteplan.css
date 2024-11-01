@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 5px;
+    font-family: Lato;
+}
+
+.example1 {
+    max-width: 60vw;
+    margin: 10px auto;
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 3px #FFA500;
+    border-radius: 6px;
+}
+
+.example2 {
+    max-width: 60vw;
+    margin: 10px auto;
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 3px #4da852;
+    border-radius: 6px;
+}
+
+.example3 {
+    background-color: #FFA500;
+    width: 575px;
+    height: 575px;
+    margin: 10px auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.example4 {
+    background-color: #4da852;
+    width: 575px;
+    height: 575px;
+    margin: 10px auto;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    color: white;
+    background-image: linear-gradient(to right,#4da852, #FFA500);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Chakra Petch";
+}
+
+h3 {
+    margin: 2px auto;
+}
+.font-example1 {
+    font-family: "Chakra Petch";
+}
+
+.font-example2 {
+    font-family: Lato;
+}
