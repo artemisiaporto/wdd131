@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+
+body {
+    font-family: Lato;
+}
+
+header {
+    display: grid;
+    grid-gap: 1.5rem;
+    background-color: #eee;
+    padding: 10px;
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-h1 {
+    color: white;
+    background-image: linear-gradient(to right,#4da852, #FFA500);
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-family: "Chakra Petch";
+}
+
+.groundfire {
+    background-image: linear-gradient(to right,#FFA500, #FFA500);
+    color: rgb(105, 105, 105);
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-family: "Chakra Petch";
+    text-align: center;
+}
+
+.grasswater {
+    background-image: linear-gradient(to right, #4da852, #4da852);
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-family: "Chakra Petch";
+    text-align: center;
+}
+
+h2 {
+    font-family: "Chakra Petch";
+}
+
+.st-pokemon {
+    grid-column: 1/2;
+}
+
+.nd-pokemon {
+    grid-column: 2/3;
+}
+
+.rd-pokemon {
+    grid-column: 3/4;
+}
+
+#menu {
+    background: none;
+    position: absolute;
+    font-size: 1.5em;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Chakra Petch';
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-family: "Chakra Petch";
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: underline double;
+}
+
+.open a {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 7px;
+    color: black;
+    background-color: #eee;
+}
+
+img {
+    width: 200px;
+}
