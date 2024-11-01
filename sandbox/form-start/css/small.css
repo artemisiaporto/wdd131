@@ -84,7 +84,7 @@ main {
 .wf1 input[type="number"] {
     background-color: #eee;
     display: block;
-    border: solid1px #999;
+    border: solid 1px #999;
     border-radius: 6px;
     padding: .75rem;
     color: #555;
